@@ -1,11 +1,23 @@
 {
   "name": "tuiter-node-server-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Node.js HTTP Web server for the Tuiter application",
+  "type": "module",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "url": "git@github.com:acd124/tuiter-node-server-app.git"
+  },
+  "author": "Alexander Chang-Davidson",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
 }
