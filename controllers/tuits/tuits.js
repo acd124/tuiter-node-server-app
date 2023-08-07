@@ -2,7 +2,7 @@ export default [
   {
     _id: '123',
     topic: 'Space',
-    username: 'SpaceX',
+    userName: 'SpaceX',
     handle: '@spacex',
     time: '2h',
     image: 'spacex.png',
@@ -18,7 +18,7 @@ export default [
   {
     _id: '234',
     topic: 'Traffic',
-    username: 'The Boring Company',
+    userName: 'The Boring Company',
     handle: '@boringcompany',
     time: '2h',
     image: 'boring2.jpg',
@@ -34,7 +34,7 @@ export default [
   {
     _id: '345',
     topic: 'Brain Injuries',
-    username: 'Neurolink',
+    userName: 'Neurolink',
     handle: '@neurolink',
     time: '3h',
     image: 'neurolink.jpg',
