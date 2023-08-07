@@ -21,7 +21,7 @@ export default [
     userName: 'The Boring Company',
     handle: '@boringcompany',
     time: '2h',
-    image: 'boring2.jpg',
+    image: 'boring2.png',
     liked: true,
     disliked: false,
     likes: 2345,
