@@ -2,12 +2,8 @@ import * as tuitsDao from './tuits-dao.js';
 
 const createTuit = async (req, res) => {
   const newTuit = req.body;
-  newTuit.likes = 0;
-  newTuit.liked = false;
-  // newTuit.dislikes = 0;
-  // newTuit.disliked = false;
   const insertedTuit = await tuitsDao.createTuit(newTuit);
-  res.json(insertedTuit);
+  res.status(insertedTuit ? 200 : 400).json(insertedTuit);
 };
 const findTuits = async (req, res) => {
   const tuits = await tuitsDao.findTuits();
@@ -17,13 +13,13 @@ const updateTuit = async (req, res) => {
   const tuitdId = req.params.tid;
   const updates = req.body;
   const status = await tuitsDao.updateTuit(tuitdId, updates);
-  res.json(status);
+  res.status(status ? 200 : 400).json(status);
 };
 const deleteTuit = async (req, res) => {
   const tuitdIdToDelete = req.params.tid;
   const status = await tuitsDao.deleteTuit(tuitdIdToDelete);
   status;
-  res.json(status);
+  res.status(status ? 200 : 404).json(status);
 };
 
 export default app => {
